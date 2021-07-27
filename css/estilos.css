@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@media only screen and (min-widht: 1024px) {
+  #grilla {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-widht: 768px) {
+  #grilla {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* grid aplicado a todas las secciones */
+#grilla {
+  display: grid;
+  grid-template-areas: "header header header header" "publicacion publicacion publicacion publicación" "pregunta pregunta pregunta pregunta" "footer footer footer footer";
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-row-gap: 10px;
+  grid-column-gap: 15px;
+  align-items: center;
+}
+
+.inicio {
+  grid-area: header;
+}
+
+.post {
+  grid-area: publicacion;
+}
+
+.pregunta {
+  grid-area: pregunta;
+}
+
+.fin {
+  grid-area: footer;
+}
+
+/* modificaciones*/
+body {
+  background-color: rgba(255, 217, 184, 0.671);
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: grey;
+  line-height: 25px;
+  word-spacing: 5px;
+}
+
+h1 {
+  font-style: italic;
+  font-family: "Merienda", cursive;
+  font-weight: bolder;
+  font-size: 40px;
+  color: #B43AF2;
+  text-align: center;
+  letter-spacing: 10px;
+  background-image: url("../ima/fond0.png");
+  animation-duration: 3s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  color: black;
+  display: inline-block;
+  margin-right: 60px;
+  margin-left: 60px;
+  padding: 20px;
+  border: dotted 6px violet;
+}
+
+h2 {
+  font-style: normal;
+  font-family: "Merienda", cursive;
+  font-weight: bold;
+  font-size: 30px;
+  color: #e03dfc;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.int {
+  margin-left: 15px;
+  background: linear-gradient(to right, white, pink);
+}
+
+.menuPrincipal {
+  font-style: normal;
+  font-family: 'Sen', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: slateblue;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+li a {
+  display: inline-block;
+  margin-right: 60px;
+  margin-left: 60px;
+  padding: 20px;
+  border: dotted 6px violet;
+  transition: .6s;
+}
+
+.nuevo {
+  font-style: inherit;
+  font-family: "Merienda", cursive;
+  font-weight: normal;
+  font-size: 25px;
+  color: palevioletred;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+}
+
+.nuevo__adelanto {
+  width: 400px;
+}
+
+.nuevo__texto {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  font-size: 25px;
+}
+
+.cuidados {
+  font-style: inherit;
+  font-family: "Merienda", cursive;
+  font-weight: normal;
+  font-size: 30px;
+  color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: comprar;
+}
+
+.cuidados__imagenes {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 25%;
+  height: auto;
+  transition: height 2s, widht 3s;
+}
+
+.cuidados__texto {
+  font-size: 25px;
+  line-height: 30px;
+  word-spacing: 5px;
+}
+
+fieldset {
+  display: flex;
+  width: 40%;
+  height: 5%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+th {
+  font-style: italic;
+  font-family: 'Sen', sans-serif;
+  font-weight: bolder;
+  color: rosybrown;
+  text-align: center;
+}
+
+td {
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+ul {
+  list-style: url("ima/game.png");
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+.juegos {
+  font-style: inherit;
+  font-family: "Merienda", cursive;
+  font-weight: normal;
+  font-size: 25px;
+  color: palevioletred;
+}
+
+.juegos__imagen {
+  width: auto;
+  height: auto;
+  animation-name: ola;
+  animation-duration: 4s;
+}
+
+@keyframes ola {
+  0% {
+    display: inline;
+    margin: 0 2rem;
+  }
+  100% {
+    animation: bounce;
+    animation-duration: 4s;
+  }
+}
+
+.juegos__texto {
+  font-size: 20px;
+}
+
+.juegos__opinion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: comprar;
+}
+
+.user {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__lista {
+  font-style: normal;
+  color: #ff94d3;
+  list-style-position: inside;
+  list-style: url("../ima/kori.png");
+  background-color: #e3e4e5;
+  margin: 10px;
+  padding: 25px;
+  float: left;
+}
+/*# sourceMappingURL=estilos.css.map */

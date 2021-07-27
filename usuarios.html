@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registrarse</title>
+        <meta name="description" content="Registrese en nuestra página web!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+        <link rel= "stylesheet" href= "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilos.min.css">
+    </head>
+        
+</html>
+
+<body>
+    <main class= "container-xl">
+        <div class= "row">
+            <div class= "col">
+
+    <header class="inicio">
+        <h1 >Juegardos</h1>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Juegardos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="usuarios.html" >Usuarios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="accion.html" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Acción
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Saga GTA</a></li>
+                                <li><a class="dropdown-item" href="#">Saga God of War</a></li>
+                            </ul>
+                        <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle" href="aventura.html" id="navbarDropdownMenuLink" role="button"
+                                 data-bs-toggle="dropdown" aria-expanded="false">
+                                Aventura
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Saga Resident Evil</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="terror.html"navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                               Terror
+                           </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                               <li><a class="dropdown-item" href="#">Saga Silent Hill</a></li>
+                           </ul>
+                       </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+        <section>
+            <h2>Crea tu usuario</h2>
+
+            <form>
+                <fieldset class = "user">
+                    <legend>Datos personales</legend>
+                    <div>
+                        <label for= "User-name"> Usuario:</label>
+                        <input name= "user-name" type= "text" placeholder= "Ingrese el nombre de usuario" required autofocus>
+                    </div> 
+                    <div>
+                        <label for= "email">E-mail:</label>
+                        <input name= "email" type= "email" placeholder= "Ingrese un correo electronico" required>
+                    </div>
+                    <div>
+                        <label for= "password">Contraseña:</label>
+                        <input name="password" type="password" placeholder= "Ingrese una combinacion de letras y nùmeros" required>
+                    </div>
+                    <div>
+                        <label for= "title">Sos màs de jugar en</label>
+                        <select id="title" name= "Sos màs de jugar en">
+                            <option value= "">Seleccione una</option>
+                            <option value= "PS3">PS3</option>
+                            <option value= "PS4">PS4</option>
+                            <option value= "XBOX 360">XBOX 360</option>
+                            <option value= "XBOX ONE">XBOX ONE</option>
+                            <option value= "PC">PC</option>
+                            <option value= "otros">Otros</option>
+                        </select>
+                    </div>    
+                </fieldset>
+
+                <fieldset class = "user">
+
+                <div>
+                    <label for= "message">Comentarios: </label>
+                    <textarea cols= "40" rows= "7"></textarea>
+                </div>    
+                <div>¿Desea suscribirse al Newsletter?
+                <input type= "checkbox" value= "1"/>
+                </div>
+                <div>
+                <input type= submit value= "enviar formulario"/>
+                <input type= reset value= "limpiar formulario">
+                </div>
+                
+                </fieldset>
+                
+            </form>
+        </section>
+            </div>
+        </div>
+
+
+        <div class= "row">
+            <div class= "col">
+        <footer class = "fin">
+            <div class = "footer">
+                <h4>Contacto</h4>
+    
+            <div class= "footer__lista">
+                <ul>
+                    <li>facebook</li>
+                    <li>instagram</li>
+                    <li>twitter</li>
+                    <li>mail</li>
+                </ul>
+            </div>
+    
+            <div class= "footer">
+                <h4>¿Dónde conseguir los juegos?</h4>
+            </div>
+    
+            <div class="footer__lista">
+                <ul>
+                    <li>steam</li>
+                    <li>amazon</li>
+                    <li>microsoft store</li>
+                </ul>
+            </div>
+    
+            <div class= "footer">
+                <h4>Usuarios</h4>
+            </div>
+    
+                <div class="footer__lista">
+                <ul>
+                    <li>registrarse</li>
+                    <li>iniciar sesión</li>
+                    <li>recuperar contraseña</li>
+                    <li>eliminar usuario</li>
+                </ul>
+            </div>    
+        </footer>
+            </div>
+        </div>
+    </main>
+
+<script href= "bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
